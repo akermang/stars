@@ -1,54 +1,54 @@
 // Subsidized firt triangular
-var i = prompt("SELECT A NUMBER FROM  1 TO 12");
+var inputNum = prompt("SELECT A NUMBER FROM  1 -.. 12");
 
-var o = i;
-var a = "*";
-var y = 1;
-while(y <= i){
-  var m = 0 ;
-  var b = "\xa0";
-  while(m < o){
-    b += "\xa0";
-    m += 1;
+var spaceNum = inputNum;
+var starString = "*";
+var starCounter = 1;
+while(starCounter <= inputNum){
+  var spaceCounter = 0 ;
+  var spaceString = "\xa0";
+  while(spaceCounter < spaceNum){
+    spaceString += "\xa0";
+    spaceCounter += 1;
   }
-  o -= 1;
-  document.write(b + a + "<br>");
-  a += "*";
-  y += 1;
+  spaceNum -= 1;
+  document.write(spaceString + starString + "<br>");
+  starString += "*";
+  starCounter += 1;
 };
 // Subsidized second triangular
-var o = i;
-var y = 0;
-var b = "\xa0\xa0\xa0";
-while(y < i){
-  var m = 1 ;
-  a = "";
-  while(m < o){
-    a += "*"
-    m += 1;
+var starsNum = inputNum;
+var spaceCounter = 0;
+var spaceString = "\xa0\xa0\xa0";
+while(spaceCounter < inputNum){
+  var starCounter = 1 ;
+  starString = "";
+  while(starCounter < starsNum){
+    starString += "*"
+    starCounter += 1;
   }
-  o -= 1;
-  document.write(b + a + "<br>");
-  y += 1;
-  b += "\xa0";
+  starsNum -= 1;
+  document.write(spaceString + starString + "<br>");
+  spaceCounter += 1;
+  spaceString += "\xa0";
 };
 //  Square
-var a = "*";
-var y = 1;
+var starString = "*";
+var starCounter = 1;
 var lineNum = 0;
-while (lineNum < i) {
-  while(y < i){
-    a += "*";
-    y = y +1;
+while (lineNum < inputNum) {
+  while(starCounter < inputNum){
+    starString += "*";
+    starCounter+= 1;
   };
-  document.write(a + "<br>");
+  document.write(starString + "<br>");
   lineNum += 1;
 };
 // A straight-angled triangle
-var a = "*";
-var y = 0;
-while(y < i){
-  document.write(a + "<br>");
-  a += "*";
-  y = y +1;
+var starString = "*";
+var starsCounter = 0;
+while(starsCounter < inputNum){
+  document.write(starString + "<br>");
+  starString += "*";
+  starsCounter+= 1;
 };
