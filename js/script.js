@@ -1,5 +1,5 @@
 // Subsidized firt triangular
-var i = prompt("Select a number from 1 to 10");
+var i = prompt("SELECT A NUMBER FROM  1 TO 12");
 
 var o = i;
 var a = "*";
