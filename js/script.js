@@ -1,10 +1,10 @@
-// מעויין המשולש הראשון
-var i = prompt("הקש מספר מאחד עד ");
+// Subsidized firt triangular
+var i = prompt("Select a number from 1 to 10");
 
 var o = i;
 var a = "*";
 var y = 1;
-while(y < i){
+while(y <= i){
   var m = 0 ;
   var b = "\xa0";
   while(m < o){
@@ -15,15 +15,14 @@ while(y < i){
   document.write(b + a + "<br>");
   a += "*";
   y += 1;
-}
-// המשולש ההפוך
+};
+// Subsidized second triangular
 var o = i;
-var a = "*";
 var y = 0;
-var b = "\xa0";
-while(y <= i){
-  var m = 0 ;
-  a = "*";
+var b = "\xa0\xa0\xa0";
+while(y < i){
+  var m = 1 ;
+  a = "";
   while(m < o){
     a += "*"
     m += 1;
@@ -33,7 +32,7 @@ while(y <= i){
   y += 1;
   b += "\xa0";
 };
-// ריבוע
+//  Square
 var a = "*";
 var y = 1;
 var lineNum = 0;
@@ -45,7 +44,7 @@ while (lineNum < i) {
   document.write(a + "<br>");
   lineNum += 1;
 };
-// משולש ישר זוית בכוכביות
+// A straight-angled triangle
 var a = "*";
 var y = 0;
 while(y < i){
